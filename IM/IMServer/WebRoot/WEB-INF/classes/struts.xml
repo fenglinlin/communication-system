@@ -1,0 +1,22 @@
+<!DOCTYPE struts PUBLIC
+  "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+  "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="UTF-8"/>
+
+	<constant name="srtuts.devMode" value="true"></constant>
+	<package name="main" extends="struts-default">
+	   <action name="serverAction" class="com.im.server.web.IMServerAction"> 
+	       <!-- <result name="list">/list.jsp</result>
+	       <result name="refresh" type="redirect">/candidateAction!candidateList</result>
+	       <result name="show">/showDetail.jsp</result> -->
+	   </action>
+	   
+	    <action name="userAction" class="com.im.server.web.UserAction"> 
+	       <result name="list">/archives.jsp</result>
+	       <result name="refresh" type="redirect">/userAction!list?flag=2</result>
+	       <result name="show">/showDetail.jsp</result>
+	        <result name="showInfo">/showInfo.jsp</result>
+	   </action>
+	</package>
+</struts>
