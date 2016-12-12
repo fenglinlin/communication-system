@@ -1,5 +1,5 @@
 # communication-system
-基于Java和JSP的企业内部通信系统
+基于Java和JP的企业内部通信系统
 
 配置:
 tomcat
